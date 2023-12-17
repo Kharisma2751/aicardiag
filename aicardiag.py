@@ -1,4 +1,3 @@
-pip install google.generativeai
 import streamlit as st
 import google.generativeai as palm  # Replace with the correct import
 
