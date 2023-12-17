@@ -1,2 +1,2 @@
-google-generativeai==<version>
+google-generativeai = ""
 streamlit==<version>
