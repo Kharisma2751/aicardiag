@@ -1,5 +1,5 @@
 import streamlit as st
-import google.generativeai as palm  # Replace with the correct import
+import google.generativeai as palm 
 
 # Initialize Generative AI
 palm.configure(api_key="AIzaSyBdY9bOtYv0M_-xdj6gJShZfqjpuCjE92U")
