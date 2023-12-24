@@ -3,7 +3,7 @@ import google.generativeai as genai  # Replace with the correct import
 
 # Initialize Generative AI
 genai.configure(api_key="AIzaSyBdY9bOtYv0M_-xdj6gJShZfqjpuCjE92U")
-
+model = genai.GenerativeModel('gemini-pro')
 
 def initiate(user_input):
     prompt = f"""
@@ -11,7 +11,7 @@ def initiate(user_input):
     User Input: {user_input}
     """
 
-    response = genai.chat(messages=prompt)
+    response = model.chat(messages=prompt)
     return response
 
 def reply(prev_msg, user_input):
