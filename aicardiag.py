@@ -1,8 +1,9 @@
 import streamlit as st
-import google.generativeai as palm 
+import google.generativeai as genai  # Replace with the correct import
 
 # Initialize Generative AI
-palm.configure(api_key="AIzaSyBdY9bOtYv0M_-xdj6gJShZfqjpuCjE92U")
+genai.configure(api_key="AIzaSyBdY9bOtYv0M_-xdj6gJShZfqjpuCjE92U")
+
 
 def initiate(user_input):
     prompt = f"""
@@ -10,7 +11,7 @@ def initiate(user_input):
     User Input: {user_input}
     """
 
-    response = palm.chat(messages=prompt)
+    response = genai.chat(messages=prompt)
     return response
 
 def reply(prev_msg, user_input):
